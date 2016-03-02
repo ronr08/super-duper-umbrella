@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is a Blog</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/myCss.css' %}" >
+  </head>
+  <body>
+    <div class="header-blue">
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <h1 class=""><a href="">This is a Blog</a></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="container"/>
+      <div class="row">
+        <div class="">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
